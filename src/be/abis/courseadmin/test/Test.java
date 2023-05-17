@@ -7,6 +7,7 @@ import be.abis.courseadmin.exception.PriceTooLowException;
 import be.abis.courseadmin.model.*;
 import be.abis.courseadmin.repository.*;
 import be.abis.courseadmin.service.AbisCompanyService;
+import be.abis.courseadmin.utils.Calculator;
 
 import java.io.*;
 import java.text.DecimalFormat;
@@ -207,6 +208,10 @@ public class Test {
 
         }
         out.close();
+
+        Calculator calc = (a1,a2) -> a1+a2;
+       // calc.performCalculation(100,2);
+        System.out.println(calc.performCalculation(100,2));
 
 
     }
